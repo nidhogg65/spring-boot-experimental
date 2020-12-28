@@ -32,13 +32,6 @@ public class TransactionService {
         this.slogan = slogan;
     }
 
-//    public TransactionService(TransactionService self, TransactionRepository transactionRepository,
-//                              @Value(value = "${bank.slogan}") String slogan) {
-//        this.self = self;
-//        this.transactionRepository = transactionRepository;
-//        this.slogan = slogan;
-//    }
-
     public Transaction create(String username, BigDecimal amount, String reference) {
         printlnTransactionInfo();
 
